@@ -4912,6 +4912,11 @@ html:not([dir=rtl]) .card-link + .card-link {
   margin-left: calc(-0.5 * var(--cui-card-cap-padding-x));
 }
 
+.imgcouille{
+  width : 150px;
+height : 150px;
+}
+
 .card-img-overlay {
   position: absolute;
   top: 0;
