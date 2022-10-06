@@ -7879,6 +7879,7 @@ html:not([dir=rtl]) .callout {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+  margin-left: 45px;
 }
 .header .container:first-child,
 .header .container-fluid:first-child,
