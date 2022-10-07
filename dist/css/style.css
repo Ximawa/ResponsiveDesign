@@ -7808,6 +7808,7 @@ html:not([dir=rtl]) .callout {
   color: var(--cui-footer-color);
   background: var(--cui-footer-bg);
   border-top: var(--cui-footer-border);
+  margin-left: 61px;
 }
 
 .footer-fixed {
