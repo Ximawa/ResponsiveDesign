@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v4.2.1
+* @link https://coreui.io
+* Copyright (c) 2022 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+<!-- Breadcrumb-->
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="css/examples.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      </script>
+  </head>
+  <body>
+    <div w3-include-html="sidebar.html"></div>
+    <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <div w3-include-html="header.html"></div>
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg"> 
+          <div class="card mb-4">
+            <div class="card-header"><strong>Centre de contact</strong></div>
+            <div class="card-body">
+
+                      <div class="example">
+                        <div class="tab-content rounded-bottom">
+                          <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1265">
+                            <div class="row">
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-primary mb-3">
+                                  <div class="card-header">Directeur</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Georges Prevost</h5>
+                                    <p class="card-text">0734979711</p>
+                                    <p class="card-text">georges.prevost@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-secondary mb-3">
+                                  <div class="card-header">Vice-Directeur</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Élise Diaz</h5>
+                                    <p class="card-text">0734917364</p>
+                                    <p class="card-text">elise.diaz@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-success mb-3">
+                                  <div class="card-header">DRH</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Sylvie de la Clerc</h5>
+                                    <p class="card-text">0734548512</p>
+                                    <p class="card-text">sylvie.clerc@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-danger mb-3">
+                                  <div class="card-header">Référent commercial</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Catherine Leveque</h5>
+                                    <p class="card-text">0734847388</p>
+                                    <p class="card-text">catherine.levesque@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-warning mb-3">
+                                  <div class="card-header">Référent administratif</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Marc Pereira</h5>
+                                    <p class="card-text">0734846612</p>
+                                    <p class="card-text">marc.pereira@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-info mb-3">
+                                  <div class="card-header">Référent financier</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Vincent Maillot</h5>
+                                    <p class="card-text">0734125523</p>
+                                    <p class="card-text">vincent.maillot@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-dark bg-light mb-3">
+                                  <div class="card-header">Responsable Régionale</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Susanne Leclerc</h5>
+                                    <p class="card-text">0734884466</p>
+                                    <p class="card-text">susanne.leclerc@immo.fr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-4">
+                                <div class="card text-white bg-dark mb-3">
+                                  <div class="card-header">Stagiaire</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Kevin Michel</h5>
+                                    <p class="card-text">0734119243</p>
+                                    <p class="card-text">kevin-leRoxxor-33@gmail.com</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+          </div>       
+        </div>
+      </div>
+      <div w3-include-html="footer.html"></div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="vendors/simplebar/js/simplebar.min.js"></script>
+    <script>
+    </script>
+
+  </body>
+</html>
+<script>
+  includeHTML();
+  </script>
