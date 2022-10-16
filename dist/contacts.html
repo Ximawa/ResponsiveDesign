@@ -87,12 +87,21 @@
       </script>
   </head>
   <body>
+    <div w3-include-html="header.html"></div>
+    <div class="container-fluid">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb my-0 ms-2">
+          <li class="breadcrumb-item">
+            <!-- if breadcrumb is single--><span> <a href="index.html">Dashboard</a> / Features / <a href="contacts.html">Centre De Contact</a> </span>
+          </li>
+        </ol>
+      </nav>
     <div w3-include-html="sidebar.html"></div>
     <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
-    <div w3-include-html="header.html"></div>
+
       <div class="body flex-grow-1 px-3">
-        <div class="container-lg"> 
+        <div class="container-lg">
           <div class="card mb-4">
             <div class="card-header"><strong>Centre de contact</strong></div>
             <div class="card-body">
@@ -185,7 +194,7 @@
                           </div>
                     </div>
             </div>
-          </div>       
+          </div>
         </div>
       </div>
       <div w3-include-html="footer.html"></div>
