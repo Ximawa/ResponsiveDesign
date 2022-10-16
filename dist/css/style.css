@@ -10284,7 +10284,7 @@ html:not([dir=rtl]) .ms-1 {
 }
 
 html:not([dir=rtl]) .ms-2 {
-  margin-left: 0.5rem !important;
+  margin-left: 3.5rem !important;
 }
 *[dir=rtl] .ms-2 {
   margin-right: 0.5rem !important;
