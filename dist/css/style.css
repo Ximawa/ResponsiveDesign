@@ -91,7 +91,7 @@
 }
 
 body {
-  margin: 0;
+  margin-left: 15%;
   font-family: var(--cui-body-font-family);
   font-size: var(--cui-body-font-size);
   font-weight: var(--cui-body-font-weight);
@@ -4865,6 +4865,8 @@ html:not([dir=rtl]) .navbar-nav {
 
 .card-title {
   margin-bottom: var(--cui-card-title-spacer-y);
+  text-align: center;
+  margin-top: 36px;
 }
 
 .card-subtitle {
@@ -7888,7 +7890,7 @@ html:not([dir=rtl]) .callout {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
-  margin-left: 45px;
+  margin-left: 2%;
 }
 .header .container:first-child,
 .header .container-fluid:first-child,
@@ -14097,4 +14099,9 @@ html:not([dir=rtl]) .wrapper {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 0px) and (max-width: 900px){
+  body{
+    margin-left: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
